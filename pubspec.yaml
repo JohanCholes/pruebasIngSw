@@ -18,6 +18,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets: 
+  - assets/fonts/Dibujito que me dio mi hermanita.jpeg
   
   fonts:
     - family: KronaOne
