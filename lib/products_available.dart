@@ -15,12 +15,12 @@ class PAvailable extends StatelessWidget {
                 height: 15,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 400),
+                margin: const EdgeInsets.symmetric(horizontal: 500),
                 child: Row(
                   children: [
                     Image.asset(
                       'assets/fonts/Carrito.png',
-                      height: 24, // Ajusta la altura de la imagen según tus necesidades
+                      height: 70, // Ajusta la altura de la imagen según tus necesidades
                     ),
                     const SizedBox(width: 10), // Espacio entre la imagen y el texto
                     RichText(
@@ -54,7 +54,7 @@ class PAvailable extends StatelessWidget {
               ),
               Container(
                 width: 300,
-                height: 464,
+                height: 450,
                 color: const Color.fromARGB(255, 242, 227, 213),
               ),
               Container(
