@@ -20,9 +20,11 @@ class PAvailable extends StatelessWidget {
                   children: [
                     Image.asset(
                       'assets/fonts/Carrito.png',
-                      height: 70, // Ajusta la altura de la imagen según tus necesidades
+                      height:
+                          70, // Ajusta la altura de la imagen según tus necesidades
                     ),
-                    const SizedBox(width: 10), // Espacio entre la imagen y el texto
+                    const SizedBox(
+                        width: 10), // Espacio entre la imagen y el texto
                     RichText(
                       text: const TextSpan(
                         children: [
@@ -56,28 +58,129 @@ class PAvailable extends StatelessWidget {
                 width: 300,
                 height: 450,
                 color: const Color.fromARGB(255, 242, 227, 213),
-              ),
-              Container(
-                child: ElevatedButton(
-                  onPressed: () {
-                    /*
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PAvailable()));
-                    */
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 15, 21, 23),
-                    padding: const EdgeInsets.all(14),
-                    textStyle: const TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 20,
                     ),
-                    fixedSize: const Size(300, 40),
-                  ),
-                  child: const Text("COMPRAR", style: TextStyle()),
+                    Container(
+                      width: 265,
+                      height: 100,
+                      color: const Color.fromARGB(255, 244, 234, 225),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: 20,),
+                          const SizedBox(
+                            child: Text("PRODUCTO"),
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(255, 42, 111, 111),
+                              padding: const EdgeInsets.all(14),
+                              textStyle: const TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                              fixedSize: const Size(300, 8),
+                            ),
+                            child: Text("AGREGAR"),
+                          )
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      width: 265,
+                      height: 100,
+                      color: const Color.fromARGB(255, 244, 234, 225),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: 20,),
+                          const SizedBox(
+                            child: Text("PRODUCTO"),
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(255, 42, 111, 111),
+                              padding: const EdgeInsets.all(14),
+                              textStyle: const TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                              fixedSize: const Size(300, 8),
+                            ),
+                            child: Text("AGREGAR"),
+                          )
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      width: 265,
+                      height: 100,
+                      color: const Color.fromARGB(255, 244, 234, 225),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: 20,),
+                          const SizedBox(
+                            child: Text("PRODUCTO"),
+                          ),
+                          const SizedBox(
+                            height: 30,
+                          ),
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor:
+                                  Color.fromARGB(255, 42, 111, 111),
+                              padding: const EdgeInsets.all(14),
+                              textStyle: const TextStyle(
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
+                              fixedSize: const Size(300, 8),
+                            ),
+                            child: Text("AGREGAR"),
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  /*
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PAvailable()));
+                  */
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 15, 21, 23),
+                  padding: const EdgeInsets.all(14),
+                  textStyle: const TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                  ),
+                  fixedSize: const Size(300, 40),
+                ),
+                child: const Text("CARRITO", style: TextStyle()),
               ),
             ],
           ),
