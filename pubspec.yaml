@@ -19,8 +19,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets: 
-  - assets/fonts/Minitienda.png
-  - assets/fonts/Carrito.png
+  - assets/fonts/
   
   fonts:
     - family: KronaOne

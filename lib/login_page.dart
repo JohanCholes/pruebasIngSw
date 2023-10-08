@@ -14,7 +14,7 @@ class LoginPage extends StatelessWidget {
             children: [
               const SizedBox(height: 100),
               SizedBox(
-                child: Image.asset('assets/fonts/Minitienda.png')
+                child: Image.asset('assets/fonts/Minitienda-removebg-preview.png')
               ),              
               const SizedBox(height: 180),
               Container(
