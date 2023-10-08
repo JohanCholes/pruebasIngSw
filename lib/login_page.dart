@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_flutter/products_available.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -48,7 +49,9 @@ class LoginPage extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 10),
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => PAvailable()));
+                    },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(24),
