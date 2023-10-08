@@ -5,54 +5,84 @@ class PAvailable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Productos Disponibles'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Productos Disponibles',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: const Color.fromARGB(255, 29, 66, 66),
+        body: Center(
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 15,
               ),
-            ),
-            SizedBox(height: 20), // Espacio entre el título y los contenedores
-            Container(
-              width: 200,
-              height: 100,
-              color: Colors.blue,
-              child: Center(
-                child: Text(
-                  'Contenedor 1',
-                  style: TextStyle(color: Colors.white),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 400),
+                child: Row(
+                  children: [
+                    Image.asset(
+                      'assets/fonts/Carrito.png',
+                      height: 24, // Ajusta la altura de la imagen según tus necesidades
+                    ),
+                    const SizedBox(width: 10), // Espacio entre la imagen y el texto
+                    RichText(
+                      text: const TextSpan(
+                        children: [
+                          TextSpan(
+                            text: "PRODUCTOS",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 24,
+                            ),
+                          ),
+                          TextSpan(text: '\n'), // Espacio entre las palabras
+                          TextSpan(
+                            text: "DISPONIBLES",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              fontSize: 24,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            ),
-            SizedBox(height: 20), // Espacio entre los contenedores
-            Container(
-              width: 200,
-              height: 100,
-              color: Colors.green,
-              child: Center(
-                child: Text(
-                  'Contenedor 2',
-                  style: TextStyle(color: Colors.white),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: 300,
+                height: 464,
+                color: const Color.fromARGB(255, 242, 227, 213),
+              ),
+              Container(
+                child: ElevatedButton(
+                  onPressed: () {
+                    /*
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PAvailable()));
+                    */
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 15, 21, 23),
+                    padding: const EdgeInsets.all(14),
+                    textStyle: const TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                    ),
+                    fixedSize: const Size(300, 40),
+                  ),
+                  child: const Text("COMPRAR", style: TextStyle()),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: PAvailable(),
-  ));
 }
