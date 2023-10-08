@@ -11,18 +11,9 @@ class LoginPage extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              const Padding(
-                padding: EdgeInsets.only(top: 100),
-                child: Text(
-                  "MINITIENDA",
-                  style: TextStyle(
-                    fontFamily: 'KronaOne',
-                    color: Colors.white,
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
+              SizedBox(
+                child: Image.asset('assets/fonts/Minitienda.png')
+              ),              
               const SizedBox(height: 280),
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 500),
