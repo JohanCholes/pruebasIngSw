@@ -34,6 +34,7 @@ class LoginPage extends StatelessWidget {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: "Ingresa tu ID",
+                    hintStyle: TextStyle(fontStyle: FontStyle.italic),
                     border: OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.circular(25.0)),
