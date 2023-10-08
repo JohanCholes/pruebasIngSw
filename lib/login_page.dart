@@ -11,10 +11,11 @@ class LoginPage extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
+              const SizedBox(height: 100),
               SizedBox(
                 child: Image.asset('assets/fonts/Minitienda.png')
               ),              
-              const SizedBox(height: 280),
+              const SizedBox(height: 180),
               Container(
                 margin: const EdgeInsets.symmetric(horizontal: 500),
                 height: 100,
@@ -61,7 +62,8 @@ class LoginPage extends StatelessWidget {
                       ),
                       fixedSize: const Size(280, 40),
                     ),
-                    child: const Text("Ingresar")),
+                    child: const Text("Ingresar")
+                    ),
               ),
             ],
           ),
