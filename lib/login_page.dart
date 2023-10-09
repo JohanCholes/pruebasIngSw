@@ -38,6 +38,7 @@ class LoginPage extends StatelessWidget {
                     border: OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.circular(25.0)),
+                    focusedBorder: OutlineInputBorder(),
                     filled: true,
                     fillColor: const Color(0xffF2E3D5),
                     contentPadding: const EdgeInsets.symmetric(
@@ -57,6 +58,7 @@ class LoginPage extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(24),
                       ),
+                      
                       backgroundColor: const Color.fromARGB(
                           255, 15, 21, 23), // Color de fondo del botón
                       padding: const EdgeInsets.all(14),
